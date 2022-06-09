@@ -1,7 +1,7 @@
 {
   "name": "pywebview_vue",
   "version": "1.0.0",
-  "description": "Build GUI applications with Python and Vue 3. A simple boilerplate based on pywebview.",
+  "description": "Build GUI applications with Python and Vue 3. A simple boilerplate based on pywebview.", 
   "scripts": {
     "frontend:dev": "parcel build src/index.html --dist-dir gui",
     "clean": "run-script-os",
