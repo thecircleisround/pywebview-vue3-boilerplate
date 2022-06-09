@@ -1,4 +1,6 @@
 setuptools
 pywebview
+requests==2.28.0
+urllib3==1.26.9
 pyinstaller; sys_platform != 'darwin'
 py2app; sys_platform == 'darwin'

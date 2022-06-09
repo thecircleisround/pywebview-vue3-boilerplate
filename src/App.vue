@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hello World</h1>
+    <h1>Hello Worlds</h1>
     <h2>Count {{ counter }} </h2>
     <input type="text">
     <input type="password">
