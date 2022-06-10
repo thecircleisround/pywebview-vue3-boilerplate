@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Build GUI applications with Python and Vue 3. A simple boilerplate based on pywebview.", 
   "scripts": {
-    "frontend:dev": "parcel build src/index.html --dist-dir gui",
+    "frontend:dev": "parcel build src/index.html --dist-dir gui --public-url .",
     "clean": "run-script-os",
     "clean:default": "rm -rf dist 2>/dev/null; rm -rf gui 2>/dev/null; rm -rf build 2>/dev/null; ",
     "clean:windows": "if exist dist rd /S /Q dist & if exist build rd /S /Q build & if exist gui rd /S /Q gui",
