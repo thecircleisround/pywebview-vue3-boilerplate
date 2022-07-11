@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Build GUI applications with Python and Vue 3. A simple boilerplate based on pywebview.", 
   "scripts": {
+    "build": "npm run clean && npm run frontend:prod && run-script-os",
+    "build:windows": ".\\venv-pywebview\\Scripts\\pyinstaller build-windows.spec",
+    "build:linux": "./venv-pywebview/bin/pyinstaller build-linux.spec --onefile",
+    "build:macos": "./venv-pywebview/python build-macos.py py2app",
     "frontend:dev": "parcel build src/index.html --dist-dir gui --public-url .",
     "clean": "run-script-os",
     "clean:default": "rm -rf dist 2>/dev/null; rm -rf gui 2>/dev/null; rm -rf build 2>/dev/null; ",
@@ -14,6 +18,10 @@
     "start": "npm run frontend:dev && run-script-os",
     "start:default": "./venv-pywebview/bin/python src/index.py",
     "start:windows": ".\\venv-pywebview\\Scripts\\python src\\index.py"
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roundisthecircle/pywebview-vue3-boilerplate.git"
   },
   "keywords": [
     "pywebview",
