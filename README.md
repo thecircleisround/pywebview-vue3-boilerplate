@@ -1,7 +1,7 @@
 # pywebview-vue3-boilerplate
 #### based on [pywebview-react-boilerplate](https://github.com/r0x0r/pywebview-react-boilerplate) and [pywebview-vue-boilerplate](https://github.com/kmrifat/pywebview-vue-boilerplate)
 
-This is a  simple boilerplate to help you start with _pywebview_ and Vue 3. It sets up the development environment, install dependencies, as well as provides scripts for building an executable. Stack is based on pywebview, Vue3, SASS, Parcel bundler, pyinstaller (Windows/Linux) and py2app (macOS).
+This is a  simple boilerplate to help you start with _pywebview_ and Vue 3. It sets up the development environment, install dependencies, as well as provides scripts for building an executable. Stack is based on pywebview, Vue3, SASS, Vite bundler, pyinstaller (Windows/Linux) and py2app (macOS). 
 
 ## Requirements
 - Python 3
