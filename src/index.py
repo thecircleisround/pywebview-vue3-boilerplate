@@ -30,21 +30,21 @@ def get_entrypoint():
     def exists(path):
         return os.path.exists(os.path.join(os.path.dirname(__file__), path))
 
-    if exists('../gui/index.html'):  # unfrozen development
+    if exists('./index.html'):  # unfrozen development
         try:
             url = 'http://localhost:1234'
             get = requests.get(url)
             if get.status_code == 200:
                 return url
         except requests.exceptions.RequestException:
-            print('Parcel server not running. Trying static files')
+            print('Vite server not running. Trying static files')
         return '../gui/index.html'
 
     if exists('../Resources/gui/index.html'):  # frozen py2app
         return '../Resources/gui/index.html'
 
-    if exists('./gui/index.html'):
-        return './gui/index.html'
+    if exists('../gui/gui/index.html'):
+        return '../gui/gui/index.html'
 
     raise Exception('No index.html found')
 
